@@ -1,36 +1,58 @@
 body {
   
-    background-color: #F25A9D;
+    background: radial-gradient(934px at 6% 39.5%, rgb(255, 35, 90) 0.2%, rgb(255, 35, 144) 54.8%, rgb(250, 99, 160) 93.4%);
 }
 
 
 .page-container{    
 margin:20px auto;
 padding-top:30px;
-background-color:#B3EAFD;
-max-width: 1000px;
+background-color:#11B2FF ;
+width: 1000px;
 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+border-radius: 10px;
 
+}
+
+h1{
+font-family: 'Lily Script One', cursive;
+font-size: 84px;
+color:#fff;
 }
 
 h3{
     font-size: 20px;
+    text-align: justify;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 h4{
-    font-size: 16px;
+    font-size: 17px;
+    font-family: 'Josefin Sans', sans-serif;
 }
  ul {
      list-style: none;
      text-align: left;
      padding: 0;
+    
  }
 
  li {
      display: inline;
-     margin: 0 80px;
+     margin: 0 60px;
  }
 
+ a{
+text-decoration: none;
+font-size: 18px;
+color:#fff
+ }
+
+ p{
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+    
+ }
  .info{
     padding-top: 50px;
     padding-bottom: 50px;
@@ -59,11 +81,24 @@ h4{
     font-size: 18px;
  }
 
- button{
+ .trailer-btn{
     border-radius: 5px;
     background-color: #4CC9FD;
     color: #fff;
     border-color: #4CC9FD;
+    padding: 5px 5px 5px 5px;
    
 
  }
+
+ .poster{
+    border-radius: 10px;
+ }
+
+
+
+
+.fav-link{
+    margin-left: 10px;
+ 
+}
