@@ -1,23 +1,29 @@
 body {
+background-color: #F2DEE6;
   
-    background: radial-gradient(934px at 6% 39.5%, rgb(255, 35, 90) 0.2%, rgb(255, 35, 144) 54.8%, rgb(250, 99, 160) 93.4%);
 }
 
+.page-container{  
 
-.page-container{    
 margin:20px auto;
 padding-top:30px;
-background-color:#11B2FF ;
-width: 1000px;
-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 border-radius: 10px;
+
 
 }
 
 h1{
 font-family: 'Lily Script One', cursive;
 font-size: 84px;
-color:#fff;
+color: #E12E89;
+}
+
+h2{
+    font-family: 'Lily Script One', cursive;
+    text-align: center;
+    color: #E12E89;
+    font-size: 40px ;
 }
 
 h3{
@@ -43,15 +49,21 @@ h4{
  }
 
  a{
+font-family: 'Josefin Sans', sans-serif;
 text-decoration: none;
 font-size: 18px;
-color:#fff
- }
+color: #E12E89
+}
 
- p{
+
+p{
     font-size: 16px;
     font-family: 'Josefin Sans', sans-serif;
     
+ }
+
+ hr{
+    color: #E12E89;
  }
  .info{
     padding-top: 50px;
@@ -83,16 +95,22 @@ color:#fff
 
  .trailer-btn{
     border-radius: 5px;
-    background-color: #4CC9FD;
+    background-color: #E12E89;
     color: #fff;
-    border-color: #4CC9FD;
+    border-color: #E12E89;
     padding: 5px 5px 5px 5px;
    
 
  }
 
+ .trailer-btn:hover{
+    color: #E12E89;
+    border-color: #E12E89;
+ }
+
  .poster{
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
  }
 
 
@@ -101,4 +119,9 @@ color:#fff
 .fav-link{
     margin-left: 10px;
  
+}
+
+.logo{
+    max-height: 50px;
+    margin-left: 13px;
 }
