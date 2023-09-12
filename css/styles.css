@@ -1,22 +1,30 @@
 body {
-background-color: #F2DEE6;
-  
+
 }
 
-.page-container{  
-
+.page-container{ 
+max-width: 1300px;
+min-height: 700px;
+background-image: url(https://am3pap004files.storage.live.com/y4mx2tqfHX_6FJCzxTP8pRRf2Bj71v7uXpcfE-8PUsyzD7jXUQtxykUDX2noeqRTNVZFkBaUaYemW0y9SuQbec3dbsXVn1K-lD3V75gmLrDppOQ5vfjRCi0uY7-gHuMKANmmQcdrU98v4Ksx7lkeaI6RjKF7wc0KC_TT6RCb2E3wT6GxkFWaETQCfkJ7mi13H6edr5io2pc0_G30HMWY33Dv3kpx9tkxshIs4K0Mh40bQI?encodeFailures=1&width=1366&height=768);
+background-size: cover;
+background-repeat: no-repeat;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+flex-wrap: wrap;
+align-content: center;
 margin:20px auto;
-padding-top:30px;
-box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-border-radius: 10px;
-
 
 }
+
+
 
 h1{
 font-family: 'Lily Script One', cursive;
-font-size: 84px;
-color: #E12E89;
+font-size: 200px;
+
+text-shadow: 2px -1px 2px rgba(252, 252, 252, 0.8);
+    color: #f41ba6;
 }
 
 h2{
@@ -24,27 +32,33 @@ h2{
     text-align: center;
     color: #E12E89;
     font-size: 40px ;
+    margin-top: 25px;
+    margin-top: 50px;
 }
 
 h3{
-    font-size: 20px;
+    font-size: 30px;
     text-align: justify;
     font-family: 'Josefin Sans', sans-serif;
 }
 
 h4{
-    font-size: 17px;
+    font-size: 22px;
     font-family: 'Josefin Sans', sans-serif;
 }
  ul {
-     list-style: none;
+    padding: 0;
+    margin:0;
+ 
      text-align: left;
-     padding: 0;
+    
     
  }
 
  li {
      display: inline;
+    list-style: none;
+    line-height: 45px;
      margin: 0 60px;
  }
 
@@ -57,7 +71,7 @@ color: #E12E89
 
 
 p{
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'Josefin Sans', sans-serif;
     
  }
@@ -65,33 +79,20 @@ p{
  hr{
     color: #E12E89;
  }
+ 
+ nav{
+
+    padding: 20px 0;
+ }
+ 
  .info{
     padding-top: 50px;
     padding-bottom: 50px;
+    margin-left: 50px;
 
  }
 
- .photo-grid {
-     margin: 18px 18px 18px 16px;
-     display: grid;
-     grid-template-columns: 1fr 1fr 1fr 1fr;
-     grid-gap: 10px;
-     transition: all 200ms ease-in-out;
-     padding-bottom: 25px;
- }
 
- .photo-grid img {
-     width: 100%;
-     border-radius: 10px;
- }
-
- .photo-grid img:hover {
-     transform: scale(1.1);
- }
- .gallery{
-    margin-left: 30px;
-    font-size: 18px;
- }
 
  .trailer-btn{
     border-radius: 5px;
@@ -124,4 +125,20 @@ p{
 .logo{
     max-height: 50px;
     margin-left: 13px;
+}
+
+ .cast {
+     
+     transition: all 200ms ease-in-out;
+     padding-bottom: 25px;
+     margin-bottom: 50px;
+ }
+
+.cast img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cast img:hover {
+    transform: scale(1.1);
 }
