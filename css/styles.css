@@ -1,144 +1,259 @@
-body {
-
+:root{
+    --heading-font:'Lobster Two', cursive;
+    --body-font:'Poppins', sans-serif;
 }
 
-.page-container{ 
-max-width: 1300px;
-min-height: 700px;
-background-image: url(https://am3pap004files.storage.live.com/y4mx2tqfHX_6FJCzxTP8pRRf2Bj71v7uXpcfE-8PUsyzD7jXUQtxykUDX2noeqRTNVZFkBaUaYemW0y9SuQbec3dbsXVn1K-lD3V75gmLrDppOQ5vfjRCi0uY7-gHuMKANmmQcdrU98v4Ksx7lkeaI6RjKF7wc0KC_TT6RCb2E3wT6GxkFWaETQCfkJ7mi13H6edr5io2pc0_G30HMWY33Dv3kpx9tkxshIs4K0Mh40bQI?encodeFailures=1&width=1366&height=768);
-background-size: cover;
-background-repeat: no-repeat;
-display: flex;
-justify-content: flex-start;
-align-items: center;
-flex-wrap: wrap;
-align-content: center;
-margin:20px auto;
 
+body{
+    background-color: #E12E89;
+    margin:8px 8px;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 
 
-h1{
-font-family: 'Lily Script One', cursive;
-font-size: 200px;
 
-text-shadow: 2px -1px 2px rgba(252, 252, 252, 0.8);
-    color: #f41ba6;
-}
-
-h2{
-    font-family: 'Lily Script One', cursive;
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../imgs/barbieland.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
     text-align: center;
-    color: #E12E89;
-    font-size: 40px ;
-    margin-top: 25px;
-    margin-top: 50px;
-}
-
-h3{
-    font-size: 30px;
-    text-align: justify;
-    font-family: 'Josefin Sans', sans-serif;
-}
-
-h4{
-    font-size: 22px;
-    font-family: 'Josefin Sans', sans-serif;
-}
- ul {
-    padding: 0;
-    margin:0;
+    padding: 200px 0;
  
+}
+
+header h1{
+    font-family: var(--heading-font);
+    text-shadow: 1px 4px 5px rgba(225, 46, 137, 0.8);
+    font-weight:700;
+    font-size: 96px;
+    line-height: 1;
+    margin: 30 0;
+}
+
+header h2 {
+    font-family: var(--body-font);
+    font-weight: 700;
+    font-size:40px ;
+    line-height: 1.5;
+    margin: 30 0;
+}
+
+.header-a{
+    font-weight: 700;
+    font-family: var(--body-font);
+    font-size: 14px;
+    color: fff;
+    padding: 16px 32px;
+    margin-top: 32px;
+    display: inline-block;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background: #E12E89;
+    border-radius: 25px;
+
+}
+
+ ul {
+     padding: 0;
+     margin: 0;
      text-align: left;
-    
-    
+
+
  }
 
  li {
      display: inline;
-    list-style: none;
-    line-height: 45px;
+     list-style: none;
+     line-height: 45px;
      margin: 0 60px;
  }
 
- a{
-font-family: 'Josefin Sans', sans-serif;
-text-decoration: none;
-font-size: 18px;
-color: #E12E89
+ a {
+     font-family: var(--body-font);
+     text-decoration: none;
+     font-size: 18px;
+     color: #fff
+ }
+
+ nav {
+
+     padding: 20px 0;
+ }
+
+
+section {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 100px;
 }
 
-
-p{
-    font-size: 18px;
-    font-family: 'Josefin Sans', sans-serif;
-    
- }
-
- hr{
-    color: #E12E89;
- }
- 
- nav{
-
-    padding: 20px 0;
- }
- 
- .info{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin-left: 50px;
-
- }
-
-
-
- .trailer-btn{
-    border-radius: 5px;
-    background-color: #E12E89;
-    color: #fff;
-    border-color: #E12E89;
-    padding: 5px 5px 5px 5px;
-   
-
- }
-
- .trailer-btn:hover{
-    color: #E12E89;
-    border-color: #E12E89;
- }
-
- .poster{
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
- }
-
-
-
-
-.fav-link{
-    margin-left: 10px;
- 
+main{
+    background-color:#fff;
+    display: block;
 }
 
-.logo{
-    max-height: 50px;
-    margin-left: 13px;
+main h2{
+    font-weight: 700;
+    font-size: 45px;
+    font-family: var(--heading-font);
+    line-height: 1.5;
+    margin-bottom: 5px;
+    color: #E12E89;
+}
+
+main h3{
+ font-weight: 400;
+ font-size: 20px;
+ font-family: var(--body-font);
+ margin: 0;
+ color: #E12E89;
+ opacity: 0.8;
+ text-transform: capitalize;   
+}
+
+main p{
+margin-top: 16px;
+font-style: normal;
+font-family: var(--body-font);
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+color: #141414;
+opacity: 0.8;
+padding:0;
+
+
+}
+
+.secondary{
+    background-color: #F7CDE3;
+}
+
+.grid{
+    display: grid;
+    grid-gap:64px
+}
+
+.grid-2{
+    grid-template-columns: 1fr 1fr;
+}
+
+.container-cast{
+    margin-top: 0;
+    margin-bottom: 100px;
 }
 
  .cast {
-     
+    background: #FFF;
      transition: all 200ms ease-in-out;
      padding-bottom: 25px;
-     margin-bottom: 50px;
+   
  }
 
-.cast img {
+ .cast h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+    margin-top: 0;
+ }
+ .cast img {
+     width: 100%;
+     border-radius: 10px;
+ }
+
+ .cast img:hover {
+     transform: scale(1.1);
+ }
+
+.responsive{
     width: 100%;
-    border-radius: 10px;
+    display: block;
 }
 
-.cast img:hover {
-    transform: scale(1.1);
+
+.card{
+
+    margin: 30px auto;
+ 
+}
+
+.video{
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+.text-center{
+    text-align: center;
+}
+
+footer{
+    color: #FFF;
+    background-image:  url("../imgs/barbiecar.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+footer a{
+    padding: 5px 5px ;
+    font-weight: bold;
+}
+
+i{
+    font-size: 30px;
+}
+
+p{
+    font-size: 18px;
+    font-weight: 200;
+    font-family: var(--body-font);
+    padding: 10px 10px;
+    color:#FFF;
+
+}
+
+.hub{
+    font-size: 20px;
+}
+
+@media (max-width: 960px) {
+    header {
+        padding: 60px 0;
+    }
+
+    header h1 {
+        font-size: 48px;
+    }
+
+    header h2 {
+        font-size: 20px;
+    }
+
+    header h3 {
+        font-size: 12px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        grid-gap: 32px;
+    }
+
+    section {
+        padding: 30px;
+    }
+
+    .card-header img {
+        display: none;
+    }
+
+    .embed {
+        aspect-ratio: 16/9;
+    }
 }

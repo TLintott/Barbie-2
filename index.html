@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script
+      src="https://kit.fontawesome.com/9499671f7b.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cherry+Swash&family=Josefin+Sans:wght@100;400&family=Lily+Script+One&family=Lobster+Two&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&family=Poppins:wght@200;400;700&display=swap"
       rel="stylesheet"
     />
 
@@ -22,7 +26,255 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Barbie World</title>
+    <title>Barbie🩱</title>
+    <style>
+      :root {
+        --heading-font: "Lobster Two", cursive;
+        --body-font: "Poppins", sans-serif;
+      }
+
+      body {
+        background-color: #e12e89;
+        margin: 8px 8px;
+      }
+
+      .container {
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+
+      header {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+          ),
+          url("../imgs/barbieland.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #fff;
+        text-align: center;
+        padding: 200px 0;
+      }
+
+      header h1 {
+        font-family: var(--heading-font);
+        text-shadow: 1px 4px 5px rgba(225, 46, 137, 0.8);
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 1;
+        margin: 30 0;
+      }
+
+      header h2 {
+        font-family: var(--body-font);
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1.5;
+        margin: 30 0;
+      }
+
+      .header-a {
+        font-weight: 700;
+        font-family: var(--body-font);
+        font-size: 14px;
+        color: fff;
+        padding: 16px 32px;
+        margin-top: 32px;
+        display: inline-block;
+        line-height: 1.5;
+        text-align: center;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        background: #e12e89;
+        border-radius: 25px;
+      }
+
+      ul {
+        padding: 0;
+        margin: 0;
+        text-align: left;
+      }
+
+      li {
+        display: inline;
+        list-style: none;
+        line-height: 45px;
+        margin: 0 60px;
+      }
+
+      a {
+        font-family: var(--body-font);
+        text-decoration: none;
+        font-size: 18px;
+        color: #fff;
+      }
+
+      nav {
+        padding: 20px 0;
+      }
+
+      section {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 100px;
+      }
+
+      main {
+        background-color: #fff;
+        display: block;
+      }
+
+      main h2 {
+        font-weight: 700;
+        font-size: 45px;
+        font-family: var(--heading-font);
+        line-height: 1.5;
+        margin-bottom: 5px;
+        color: #e12e89;
+      }
+
+      main h3 {
+        font-weight: 400;
+        font-size: 20px;
+        font-family: var(--body-font);
+        margin: 0;
+        color: #e12e89;
+        opacity: 0.8;
+        text-transform: capitalize;
+      }
+
+      main p {
+        margin-top: 16px;
+        font-style: normal;
+        font-family: var(--body-font);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #141414;
+        opacity: 0.8;
+        padding: 0;
+      }
+
+      .secondary {
+        background-color: #f7cde3;
+      }
+
+      .grid {
+        display: grid;
+        grid-gap: 64px;
+      }
+
+      .grid-2 {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .container-cast {
+        margin-top: 0;
+        margin-bottom: 100px;
+      }
+
+      .cast {
+        background: #fff;
+        transition: all 200ms ease-in-out;
+        padding-bottom: 25px;
+      }
+
+      .cast h2 {
+        font-size: 50px;
+        margin-bottom: 20px;
+        margin-top: 0;
+      }
+      .cast img {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      .cast img:hover {
+        transform: scale(1.1);
+      }
+
+      .responsive {
+        width: 100%;
+        display: block;
+      }
+
+      .card {
+        margin: 30px auto;
+      }
+
+      .video {
+        width: 100%;
+        aspect-ratio: 16/9;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      footer {
+        color: #fff;
+        background-image: url("../imgs/barbiecar.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 100px 0;
+      }
+
+      footer a {
+        padding: 5px 5px;
+        font-weight: bold;
+      }
+
+      i {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: 200;
+        font-family: var(--body-font);
+        padding: 10px 10px;
+        color: #fff;
+      }
+
+      .hub {
+        font-size: 20px;
+      }
+
+      @media (max-width: 960px) {
+        header {
+          padding: 60px 0;
+        }
+
+        header h1 {
+          font-size: 48px;
+        }
+
+        header h2 {
+          font-size: 20px;
+        }
+
+        header h3 {
+          font-size: 12px;
+        }
+
+        .grid {
+          grid-template-columns: 1fr;
+          grid-gap: 32px;
+        }
+
+        section {
+          padding: 30px;
+        }
+
+        .card-header img {
+          display: none;
+        }
+
+        .embed {
+          aspect-ratio: 16/9;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="container">
@@ -30,27 +282,36 @@
         <img src="" class="" />
         <ul>
           <li>
-            <a href="" class="">Home</a>
+            <a href="/index.html" class="">Home</a>
           </li>
           <li>
-            <a href="" class="">Trailer</a>
+            <a href="index.html#cast"> Cast</a>
           </li>
           <li>
-            <a href="" class=""> Book Tickets </a>
+            <a
+              href="https://www.youtube.com/watch?v=pBk4NYhWNMM"
+              class=""
+              target="_blank"
+              >Trailer</a
+            >
+          </li>
+          <li>
+            <a href="https://www.myvue.com/" target="-blank"> Book Tickets </a>
           </li>
         </ul>
       </nav>
-    </div>
-
-    <div class="page-container">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-6 info">
-            <h1>Barbie</h1>
-
+      <header>
+        <h1>Welcome to Barbie Land</h1>
+        <h2>She's Everthing. He's just Ken</h2>
+        <a class="header-a" href="https://www.myvue.com/" target="_blank"
+          >Book Tickets</a
+        >
+      </header>
+      <main>
+        <section class="grid grid-2">
+          <div>
+            <h2>Barbie (2023)</h2>
             <h3>21st July 2023 | Comedy/Drama | 1hr 54m</h3>
-            <br />
-            <h4>This is the best day ever...Welcome to Barbie Land!</h4>
             <p>
               To live in Barbie Land is to be a perfect being in a perfect
               place. Unless you have a full-on existential crisis. Or you’re a
@@ -62,54 +323,145 @@
               a chance to go to the real world, they soon discover the joys and
               perils of living among humans.
             </p>
-            <span>
-              <a href="" class="trailer-btn btn">▶️ Watch Trailer</a>
-            </span>
-            <span>
-              <a href="" class="fav-link"> 💖 Add to Favorites</a>
-            </span>
+            <div>
+              <p><strong>Director:</strong> Greta Gerwig</p>
+            </div>
+            <div>
+              <p>
+                <strong>Producer:</strong> David Heyman, Margot Robbie, Tom
+                Ackerley, Robbie Brenner
+              </p>
+            </div>
+            <div>
+              <p><strong>Writer: </strong>Greta Gerwig, Noah Baumbach</p>
+            </div>
           </div>
-          <div class="col-sm-6 info">
-            <img src="" class="img-fluid poster" />
+          <div>
+            <img
+              src="https://am3pap004files.storage.live.com/y4m5-xOReg1W3k6bMPRpFSM4Eotnusd9NmfySAwWDi2aQFJ1vOnT0dJQGsuRnqtCRxgl1UzOqq6v_AzigMdIpvvoncgY5qlHZKW3eRtdVgt-SHGxC7bzoYcIaJQeCn22W-3R4_WBmQaHfj7t_TEmFbK3mHa4-w8qomF0vun15QdaOtsWwh5DBz-Vg2oKzsu45hpwLdvazNv2xcxkFUh3AazjKT-K9P87jTjHkR2I4SZjdU?encodeFailures=1&width=851&height=856"
+              alt=""
+              class="responsive"
+            />
           </div>
-        </div>
-      </div>
-    </div>
-
-    <h2>Meet the Cast</h2>
-    <div class="container cast">
-      <div class="row">
-        <div class="col-sm-2">
-          <img src="imgs/imgs for Gallery/MR.jpg" class="img-fluid" alt="" />
-        </div>
-        <div class="col-sm-2">
-          <img src="imgs/imgs for Gallery/RG.jpg" class="img-fluid" alt="" />
-        </div>
-        <div class="col-sm-2">
-          <img src="imgs/imgs for Gallery/AF.jpg" class="img-fluid" alt="" />
-        </div>
-        <div class="col-sm-2">
-          <img src="imgs/imgs for Gallery/SL.jpg" class="img-fluid" alt="" />
-        </div>
-        <div class="col-sm-2">
-          <img src="imgs/imgs for Gallery/EM.jpg" class="img-fluid" alt="" />
-        </div>
-        <div class="col-sm-2">
-          <img src="imgs/imgs for Gallery/MC.jpg" class="img-fluid" alt="" />
-        </div>
-      </div>
-    </div>
-
-    <div class="trailer container">
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/pBk4NYhWNMM?si=Hv7NBiZTfzZ0MNkq&amp;start=2"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
+        </section>
+        <section class="secondary">
+          <h2 class="text-center">Offical Trailer</h2>
+          <div class="card">
+            <iframe
+              class="video"
+              src="https://www.youtube.com/embed/pBk4NYhWNMM?si=xnd63MlxVr5rhi3S"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
+        <section class="cast">
+          <h2 class="text-center" id="cast">Meet the Cast:</h2>
+          <div class="container container-cast">
+            <div class="row">
+              <div class="col-sm-2">
+                <a
+                  href="https://www.imdb.com/name/nm3053338/?ref_=tt_cl_t_1"
+                  target="_blank"
+                >
+                  <img
+                    src="imgs/imgs for Gallery/MR.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="col-sm-2">
+                <a
+                  href="https://www.imdb.com/name/nm0331516/?ref_=ttfc_fc_cl_t13"
+                  target="_blank"
+                >
+                  <img
+                    src="imgs/imgs for Gallery/RG.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="col-sm-2">
+                <a
+                  href="https://www.imdb.com/name/nm1065229/?ref_=ttfc_fc_cl_t20"
+                  target="_blank"
+                >
+                  <img
+                    src="imgs/imgs for Gallery/AF.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="col-sm-2">
+                <a
+                  href="https://www.imdb.com/name/nm4855517/?ref_=ttfc_fc_cl_t14"
+                  target="_blank"
+                >
+                  <img
+                    src="imgs/imgs for Gallery/SL.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="col-sm-2">
+                <a
+                  href="https://www.imdb.com/name/nm8076281/?ref_=ttfc_fc_cl_t5"
+                  target="_blank"
+                >
+                  <img
+                    src="imgs/imgs for Gallery/EM.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="col-sm-2">
+                <a
+                  href="https://www.imdb.com/name/nm0148418/?ref_=ttfc_fc_cl_t19"
+                  target="_blank"
+                >
+                  <img
+                    src="imgs/imgs for Gallery/MC.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <section class="grid grid-2">
+          <div>
+            <h3>#BarbieTheMovie</h3>
+            <a href="https://www.instagram.com/barbiethemovie/" target="_blank"
+              ><i class="fa-brands fa-instagram"> </i
+            ></a>
+            <a href="https://twitter.com/barbiethemovie" target="_blank"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a href="https://www.tiktok.com/@barbiethemovie" target="_blank"
+              ><i class="fa-brands fa-tiktok"></i
+            ></a>
+            <a href="https://www.facebook.com/BarbieTheMovie" target="_blank"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+          </div>
+          <div></div>
+        </section>
+      </footer>
+      <p class="text-center">
+        This page was created by Tracey Lintott as part of a SheCodes Challenge
+        and is open sourced.
+        <a href=""> <i class="fa-brands fa-github hub"></i></a>
+      </p>
     </div>
   </body>
 </html>
